@@ -1,0 +1,12 @@
+[project]
+name = "end-to-end"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "azure-functions>=2.1.0",
+    "pandas>=3.0.2",
+    "fastapi>=0.136.0",
+    "azure-identity>=1.25.3"
+]
