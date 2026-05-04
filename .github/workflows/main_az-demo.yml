@@ -82,4 +82,7 @@ jobs:
           app-name: 'Az-Demo'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
+          sku: flexconsumption
+          remote-build: true
+          respect-funcignore: true
           
