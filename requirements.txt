@@ -5,19 +5,35 @@ annotated-doc==0.0.4
 annotated-types==0.7.0
     # via pydantic
 anyio==4.13.0
-    # via starlette
-azure-functions==2.1.0
-    # via end-to-end
+    # via
+    #   starlette
+    #   watchfiles
+click==8.3.3
+    # via uvicorn
+colorama==0.4.6 ; sys_platform == 'win32'
+    # via
+    #   click
+    #   uvicorn
 fastapi==0.136.1
     # via end-to-end
+gunicorn==26.0.0
+    # via end-to-end
+h11==0.16.0
+    # via uvicorn
+httptools==0.7.1
+    # via uvicorn
 idna==3.13
     # via anyio
-markupsafe==3.0.3
-    # via werkzeug
+packaging==26.2
+    # via gunicorn
 pydantic==2.13.3
     # via fastapi
 pydantic-core==2.46.3
     # via pydantic
+python-dotenv==1.2.2
+    # via uvicorn
+pyyaml==6.0.3
+    # via uvicorn
 starlette==1.0.0
     # via fastapi
 typing-extensions==4.15.0
@@ -30,5 +46,11 @@ typing-inspection==0.4.2
     # via
     #   fastapi
     #   pydantic
-werkzeug==3.1.8
-    # via azure-functions
+uvicorn==0.46.0
+    # via end-to-end
+uvloop==0.22.1 ; platform_python_implementation != 'PyPy' and sys_platform != 'cygwin' and sys_platform != 'win32'
+    # via uvicorn
+watchfiles==1.1.1
+    # via uvicorn
+websockets==16.0
+    # via uvicorn
